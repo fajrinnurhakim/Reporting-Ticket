@@ -1,0 +1,433 @@
+/*dashboard*/
+body {
+	font-family: "Arial", serif;
+	background-color: #FFFFFF;
+	background-image: url("../css/background.jpg");
+}
+
+/*navigasi bar atas dan samping*/
+.navbar {
+	position: fix;
+	display: block;
+	height: 64px;
+	left: 0px;
+	top: 0px;
+	padding: 0;
+	box-shadow: 0px 2px 0px 0px #C7C9C9;
+}
+
+.navbar .open-slide .hamburgermenu {
+	float: left;
+	display: block;
+	color: #212529;
+	text-align: center;
+	padding: 16px 14px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar h1 {
+	float: left;
+	display: block;
+	color: #212529;
+	text-align: center;
+	margin: 10px;
+	text-decoration: none;
+}
+
+.navbar h2 {
+	float: right;
+	display: block;
+	color: #212529;
+	text-align: center;
+	padding: 6px 8px;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.navbar .navbar-nav .iconout {
+	float: right;
+	display: block;
+	color: #212529;
+	text-align: center;
+	padding: 16px 14px;
+	text-decoration: none;
+}
+
+.navbar ul {
+	margin: 10px;
+	list-style: none;
+}
+
+.navbar a:hover {
+	background-color: #F8F9FA;
+
+}
+
+.side-nav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #212529;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+
+.logotext {
+	width: 144px;
+	height: 32px;
+	position: absolute;
+	top: 28px;
+	right: 90px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.side-nav h3 {
+	width: 51px;
+	height: 27px;
+	left: 25px;
+	top: 88px;
+	padding: 5px 5px 5px 30px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	/* identical to box height */
+
+	text-decoration-line: underline;
+
+	color: #F8F9FA;
+}
+
+.side-nav a {
+	padding: 5px 10px 10px 30px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #ccc;
+	display: block;
+	transition: 0.3s;
+}
+
+.side-nav a:hover {
+	color: #212529;
+	background-color: #C7C9C9;
+}
+
+.side-nav .btn-close {
+	position: absolute;
+	top: 10px;
+	right: 22px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.side-nav .btn-close:hover {
+	background-color: #212529;
+}
+.sidenav a,.dropdown-btn {
+	padding: 5px 10px 10px 30px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #C7C9C9;
+	display: block;
+	border: none;
+	background: none;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+  }
+
+  .dropdown-btn:hover {
+	color: #212529;
+	background-color: #C7C9C9;
+  }
+
+  .dropdown-container {
+	display: none;
+	background-color: #262626;
+	padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+	float: right;
+	padding-right: 8px;
+  }
+
+#main {
+	transition: margin-left 0.5s;
+	width: 100%;
+	background-color: #ffffff;
+	padding: 10px 0px 100px 0px;
+}
+/*navigasi bar atas dan samping*/
+
+/*Footer*/
+
+.footer-distributed {
+	background-color: #ffffff;
+	width: 97.5%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 0px 10px 0px 10px;
+	margin-top: auto;
+	grid-column: 1/ -1;
+	position: fixed;
+	bottom: 0;
+	box-shadow: 0px -2px 0px 0px #C7C9C9;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-right {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+	width: 40%;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.footer-distributed .footer-right {
+	width: 13%;
+	float: right;
+	margin-right: 20px;
+}
+
+.footer-distributed1 {
+	background-color: #FFFFFF;
+	width: 98.5%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 0px 10px 0px 10px;
+	margin-top: 10px;
+	position: static;
+	box-shadow: 0px -2px 0px 0px #C7C9C9;
+}
+
+.footer-distributed1 .footer-left,
+.footer-distributed1 .footer-right {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-distributed1 .footer-left {
+	width: 40%;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.footer-distributed1 .footer-right {
+	width: 13%;
+	float: right;
+	margin-right: 20px;
+}
+/*Footer*/
+/*Body*/
+
+/* Style inputs, select elements dan textareas */
+input[type=text],input[type=number],input[type=date], select, textarea{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: vertical;
+  }
+  
+  /* Style untuk label ditampilkan setelah input */
+  label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+  }
+  
+  input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+  }
+  /* Style untuk submit button */
+  input[type=submit] {
+	background-color: #ffffff;
+	color: #212529;
+	padding: 12px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	float: center;
+	margin: auto;
+	border: 1px solid #212529;
+  }
+
+  input[type=submit]:hover{
+	background-color: #212529;
+	color: #ffffff;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: center;
+	margin: auto;
+	border: 1px solid #FFFFFF;
+	transition: 800ms;
+  }
+  
+  /* Style untuk container */
+  .container {
+	width: 100%;
+	background-color: #ffffff;
+	padding: 10px 0px 10px 0px;
+	box-shadow: 0px -2px 0px 0px #C7C9C9;
+  }
+  
+  /* Floating kolom untuk label: lebar 25%  */
+  .col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+	font-size:medium;
+  }
+
+  .col-20 {
+	float: left;
+	width: 20%;
+	margin-right: 5%;
+	margin-top: 6px;
+	font-size:medium;
+  }
+  
+  /* floating kolom untuk input: lebar 75% */
+  .col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+  }
+  
+  /* Hapus floats setelah kolom */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Responsive layout -ketika layar kurang dari 600px lebarnya, buat dua kolom bertumpuk satu sama lain, bukan di samping satu sama lain*/
+  @media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+	  width: 100%;
+	  margin-top: 0;
+	}
+  }
+
+  /*- TABEL -*/
+  table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #ddd;
+	font-size: 12px;
+  }
+  
+  th, td {
+	text-align: left;
+	padding: 8px;
+  }
+  
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+
+  @media screen and (max-width: 600px) {
+	table, th, td, tr:nth-child(even){
+	  width: 100%;
+	  margin-top: 0;
+	}
+  }
+  /*- TABEL -*/
+
+#columnchart_material{
+	margin: 50px auto;
+	width: 800px;
+	height: 800px;
+  }
+
+  /* - card */
+  .card {
+	height: 5rem;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: 0px;
+	align-items: center;
+	border-radius: 10px;
+  }
+
+  .card.color5 {
+	background: linear-gradient(150deg, #535554, #020202 100%);
+	color: #f2f2f2;
+  }
+
+  .dashboard {
+	box-shadow: 0px 2px 0px 0px #C7C9C9;;
+	margin: 1rem;
+	display: grid;
+	gap: 1rem;
+	color: #fff;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+  }
+  /* - card */
+
+  /* - button */
+  .btn {
+	background-color: #f9f9f9; /* Green */
+	border: 1;
+	color: black;
+	padding: 5px 32px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	font-size: 16px;
+  }
+
+  .btn:hover {
+	background-color: #020202; /* Green */
+	border: 1;
+	color: white;
+	padding: 5px 32px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	font-size: 16px;
+  }
+
+  .row button:hover {
+	background-color: #020202; /* Green */
+	border: 1;
+	color: white;
+	padding: 5px 32px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	font-size: 16px;
+  }
+
+  .row button{
+	background-color: #f9f9f9; /* Green */
+	border : 1;
+	color: black;
+	padding: 5px 32px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	font-size: 16px;
+  }
